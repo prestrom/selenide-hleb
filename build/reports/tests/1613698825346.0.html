@@ -1,0 +1,1471 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="" class=" js flexbox flexboxlegacy canvas canvastext postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache"><head><title>Corporate Maintenance</title><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/libs/jquery-ui-1.10.4.smoothness.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/style.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/nav.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/data_tables.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/editor_form.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/stateface.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/libs/jquery.qtip.min.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/salesReport.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/customerStatistics.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/libs/jquery.dataTables.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/scDataTables.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/libs/bootstrap-tagsinput.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/scTagsinput.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/webpackRoot/vendor-bundle.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/webpackRoot/styles-bundle.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/webpackRoot/ecourtsJudgment-bundle.css"><link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/modal_data_tables.css">
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" href="/backoffice/assets/452e437e0b0ac748/ctx/css/ie-support.css"/>
+<![endif]-->
+<style>
+@font-face {
+font-family: 'Ubuntu Condensed';
+src: url('/backoffice/assets/452e437e0b0ac748/ctx/type/ubuntu-font-family-0.80/Ubuntu-C.eot');
+src: local('☺'),
+url('/backoffice/assets/452e437e0b0ac748/ctx/type/ubuntu-font-family-0.80/Ubuntu-C.ttf') format('truetype');
+}
+@font-face {
+font-family: 'Icomoon';
+src: url('/backoffice/assets/452e437e0b0ac748/ctx/type/icomoon/icomoon.eot');
+src: local('☺'),
+url('/backoffice/assets/452e437e0b0ac748/ctx/type/icomoon/icomoon.ttf') format('truetype');
+}
+@font-face {
+font-family: 'StateFace';
+src: url('/backoffice/assets/452e437e0b0ac748/ctx/type/stateface/stateface-regular-webfont.eot');
+src: local('☺'),
+url('/backoffice/assets/452e437e0b0ac748/ctx/type/stateface/stateface-regular-webfont.ttf') format('truetype');
+}
+</style><!--	All JavaScript at the bottom, except for Modernizr / Respond.
+			Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
+			For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ --><script src="/backoffice/assets/452e437e0b0ac748/core/underscore_1_3_3.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/prototype.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/scriptaculous_1_9_0/scriptaculous.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/scriptaculous_1_9_0/effects.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-core.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-spi.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-prototype.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-init.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-pubsub.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-events.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-dom.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-console.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-ajax.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-formfragment.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/t5-alerts.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/tapestry.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/tapestry-console.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/tree.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/core/tapestry-messages.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery-2.1.1.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/jquery-noconflict.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery-ui-1.10.4.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery.validate.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery.qtip.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/webpackRoot/bundle.defaultVendors.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/common/assets/js/date-picker-utils.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/additional-methods.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/utils.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/function.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery.treetable.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery.dataTables.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/bootstrap-tagsinput.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/bootstrapCommon.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/webpackRoot/bundle.vendor.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/webpackRoot/bundle.autocorrect.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/components/autocorrect.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/validator.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/jquery.tools.min.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/components/alertManager.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/menu.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/components/corporation-list.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/components/find.js" type="text/javascript"></script><script src="/backoffice/assets/452e437e0b0ac748/ctx/js/libs/modernizr.custom.59955.js" type="text/javascript"></script><link href="/backoffice/assets/452e437e0b0ac748/ctx/favicon.ico" rel="shortcut icon"><!-- uncomment in if we will support IE --><!-- <t:extension.ifIe test="(gte IE 6)&amp;(lte IE 8)">
+		<script type="text/javascript" src="${asset:context:/js/libs/selectivizr-min.js}"></script>
+	</t:extension.ifIe> --><meta content="Apache Tapestry Framework (version 5.3.8)" name="generator"></head><body><script>
+Tapestry.onDOMLoaded(function () {
+$(document.body).on(Tapestry.FORM_PREPARE_FOR_SUBMIT_EVENT, addOverlay);
+$(document.body).on(Tapestry.TRIGGER_ZONE_UPDATE_EVENT, addOverlay);
+$(document.body).on(Tapestry.ZONE_UPDATED_EVENT, stopOverlay);
+$(document).on('ready', stopOverlay());
+// Guaranteed to run regardless of what happened during the request
+Ajax.Responders.register({
+onComplete : stopOverlay
+})
+});
+</script><div id="systemMessageContainer"></div><a href="/backoffice/rest/" id="apiBase"></a><div data-autocorrects="[
+  {
+    &quot;text&quot; : &quot;     1&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;qq&quot;
+  },
+  {
+    &quot;text&quot; : &quot;  1515&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;test one11&quot;
+  },
+  {
+    &quot;text&quot; : &quot;  2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;test&quot;
+  },
+  {
+    &quot;text&quot; : &quot;  3&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;testtt&quot;
+  },
+  {
+    &quot;text&quot; : &quot;\&quot;*\&quot;&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the pleadings set forth herein with an \&quot;*\&quot; before their names are not filed by the Clerk of the Superior Court.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;(*)&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the pleadings marked with an (*) are not filed by the Clerk of the Superior Court.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;?o&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;O&quot;
+  },
+  {
+    &quot;text&quot; : &quot;?o&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;O&quot;
+  },
+  {
+    &quot;text&quot; : &quot;?Order&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Order&quot;
+  },
+  {
+    &quot;text&quot; : &quot;111wed&quot;,
+    &quot;department&quot; : &quot;Common&quot;
+  },
+  {
+    &quot;text&quot; : &quot;111wed&quot;,
+    &quot;department&quot; : &quot;Foreclosure&quot;
+  },
+  {
+    &quot;text&quot; : &quot;1515&quot;,
+    &quot;department&quot; : &quot;Miscellaneous&quot;,
+    &quot;replaceWith&quot; : &quot;fifteen&quot;
+  },
+  {
+    &quot;text&quot; : &quot;15d&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Notice to Cure directs the default be cured within 15 days and not 45 days of the date of the Notice.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;3&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;www&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aa2&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;aa2&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aa2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;commonn&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aa2&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Test1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aad&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Attorneys for answering Defendant&quot;
+  },
+  {
+    &quot;text&quot; : &quot;abc_qf&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;EDITED text for autocorrect verification&quot;
+  },
+  {
+    &quot;text&quot; : &quot;adi&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Affidavit of Diligent Inquiry and Accuracy&quot;
+  },
+  {
+    &quot;text&quot; : &quot;adm&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Administrative Order&quot;
+  },
+  {
+    &quot;text&quot; : &quot;adq&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the adequacy of the Inquiry.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;adqh&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the adequacy of the Inquiry.  Further, we fail to find any statement that             is alive, even though his, her, their whereabouts cannot be ascertained.  He, She, They are not joined with the expression his, her, their heirs, devisees, etc.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ag&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Attorney General&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aml&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;authorized mortgage loan servicer for Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;answeing&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;answering&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ao&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Administrative Order Requiring a Certification Setting Forth the Status of a Pending Foreclosure Matter &quot;
+  },
+  {
+    &quot;text&quot; : &quot;aoi&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the adequacy of the Inquiry.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aol&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Notice to Residential Mortgage Debtor(s) fails to set forth the address of the lender.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aom&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Assignment of Mortgage&quot;
+  },
+  {
+    &quot;text&quot; : &quot;aop&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Affidavit of Publication&quot;
+  },
+  {
+    &quot;text&quot; : &quot;apf&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find an Affidavit of Reformation filed herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ar&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;Last annual report filed:&quot;
+  },
+  {
+    &quot;text&quot; : &quot;avp&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Assistant Vice President&quot;
+  },
+  {
+    &quot;text&quot; : &quot;b1&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;test1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;b2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;test2&quot;
+  },
+  {
+    &quot;text&quot; : &quot;b3&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;test3&quot;
+  },
+  {
+    &quot;text&quot; : &quot;b3&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;test3&quot;
+  },
+  {
+    &quot;text&quot; : &quot;bieng&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;being&quot;
+  },
+  {
+    &quot;text&quot; : &quot;bs&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether the Bankruptcy Stay has been lifted.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;bsti&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether the Bankruptcy Stay has been lifted.  Further, consideration should be given as to the disposition of the Trustee's interest.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;bti&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the disposition of the Bankruptcy Trustee's interest.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ca&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;(See copies annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;CAF&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Additional Amount Due&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cdi&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Diligent Inquiry&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cdia&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Diligent Inquiry and Accuracy&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cert &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification in Support of Motion annexed thereto.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cf &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Costs and Fees&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cis&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(Certification in Support of Notice of Motion is annexed thereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;CLLC&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;LIMITED LIABILITY COMPANIES UNDER N.J.S.A. 42:2B-2 E.T. SEQ. ARE NOT SUBJECT TO THE CORPORATION TAX ACT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;CLP&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;LIMITED PARTNERSHIPS FORMED PURSUANT TO N.J.S.A. 42:2-1 ARE NOT SUBJECT TO NEW JERSEY CORPORATION BUSINESS TAX REQUIREMENTS&quot;
+  },
+  {
+    &quot;text&quot; : &quot;CM&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing &quot;
+  },
+  {
+    &quot;text&quot; : &quot;cmar&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Marital Status&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cmm&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing Notices of Mediation &quot;
+  },
+  {
+    &quot;text&quot; : &quot;cmrm&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;by certified and regular mail.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cmrrr&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;certified mail, return receipt requested&quot;
+  },
+  {
+    &quot;text&quot; : &quot;codi&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Rule 4:64-2(d) Affidavit of Diligent Inquiry and Accuracy of Foreclosure Documents and Factual Assertions&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cof &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Fees&quot;
+  },
+  {
+    &quot;text&quot; : &quot;coi&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Inquiry &quot;
+  },
+  {
+    &quot;text&quot; : &quot;copad&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;together with Certification of Proof of Amount Due and Certification of Due Diligence.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cp&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff's Costs $&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cq&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Inquiry&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cs&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Search Fees&quot;
+  },
+  {
+    &quot;text&quot; : &quot;csb&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to &quot;
+  },
+  {
+    &quot;text&quot; : &quot;csm&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;(Certification in Support of Motion annexed thereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cso&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Case Management Order&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ctr&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Tenants' Rights&quot;
+  },
+  {
+    &quot;text&quot; : &quot;cv&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification Regarding Vacancy&quot;
+  },
+  {
+    &quot;text&quot; : &quot;def&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(It appears from the Sheriff's statement that there was a deficiency.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Defenant&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Defendant&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Defenants&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Defendants&quot;
+  },
+  {
+    &quot;text&quot; : &quot;defendnat&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;defendant&quot;
+  },
+  {
+    &quot;text&quot; : &quot;defendnats&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;defendants&quot;
+  },
+  {
+    &quot;text&quot; : &quot;defndants &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;defendants &quot;
+  },
+  {
+    &quot;text&quot; : &quot;df&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Default&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dft&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Defendant&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dfts&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Defendants&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dia&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Diligent Inquiry and Accuracy&quot;
+  },
+  {
+    &quot;text&quot; : &quot;DIS&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;was dissolved by unanimous consent of it's stockholders&quot;
+  },
+  {
+    &quot;text&quot; : &quot;divided&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Further, the property described in the Complaint cannot be divided and should be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dl&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(See copy of Diligent Inquiry, Etc., annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dm&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Duly mailed on &quot;
+  },
+  {
+    &quot;text&quot; : &quot;dn&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Final Judgment fails to order that plaintiff's mortgage be reformed.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dsum&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Additional Amount Due Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;dwa&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;dissolved without assets &quot;
+  },
+  {
+    &quot;text&quot; : &quot;eod&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Proof of Mailing - Entry of Default&quot;
+  },
+  {
+    &quot;text&quot; : &quot;esc&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We question whether the plaintiff can foreclose against the State of New Jersey as owner of the premises through escheat.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;EXC20&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;2020; EXCEPT AS HEREINAFTER NOTED:&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FANDE&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;IS IN FORCE AND EFFECT.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;fd&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Filed &quot;
+  },
+  {
+    &quot;text&quot; : &quot;fdf&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing of filed Default&quot;
+  },
+  {
+    &quot;text&quot; : &quot;fdn&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Foreclosure Dismissal Notice&quot;
+  },
+  {
+    &quot;text&quot; : &quot;fdo&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Foreclosure Dismissal Order&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FE&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;is in force and effect.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FFA&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing Notice for Entry of Final Judgment and No Response from Debtor pursuant to Fair Foreclosure Act&quot;
+  },
+  {
+    &quot;text&quot; : &quot;fj&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Final Judgment&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL1&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;COMPLAINT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL10&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ORDER CORRECTING NAME OF PLAINTIFF/DEFENDANT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL11&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ORDER SETTING AMOUNT, TIME AND PLACE OF REDEMPTION&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL12&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;FINAL JUDGMENT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL13&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ALIAS WRIT OF EXECUTION&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL14&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;WRIT OF POSSESSION&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL15&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ORDER FOR ADDITIONAL SUMS&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL16&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ORDER VACATING FINAL JUDGMENT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL17&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;PROOF OF MAILING NOTICE OF SALE&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL18&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;MISCELLANEOUS&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL19&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;FAIR FORECLOSURE ACT LETTER&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;AMENDED COMPLAINT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL20&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;WHOLE CASE&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL3&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;NOTICE TO THE STATE OF NEW JERSEY&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL4&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;AFFIDAVIT OF SERVICE&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL5&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;INQUIRY&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL6&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;DEFAULT - REQUEST AND CERTIFICATION&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL7&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;NOTICE OF MOTION AND ORDER FOR DEFAULT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL8&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;DISMISSAL&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FL9&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;PROOF OF MAILING&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Fled&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Filed&quot;
+  },
+  {
+    &quot;text&quot; : &quot;fn&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;Using the fictitious name&quot;
+  },
+  {
+    &quot;text&quot; : &quot;FNMADEF&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether Federal National Mortgage Association/Federal Home Loan Mortgage Corporation (\&quot;Freddie Mac\&quot;) should have consented to the action and service made upon the United States of America&quot;
+  },
+  {
+    &quot;text&quot; : &quot;frf&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Final Judgment fails to order that plaintiff's mortgage be reformed.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;froth&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;forth &quot;
+  },
+  {
+    &quot;text&quot; : &quot;fs&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Fein, Such, Kahn &amp; Shepard, P.C.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;hbt&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;highest bidder therefore.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;hd&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;heirs, devisees, etc.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;hdpr&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;heirs, devisees, and personal representatives, and his, her, their or any of their successors in right, title and interest&quot;
+  },
+  {
+    &quot;text&quot; : &quot;heirs,&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;heirs, devisees and personal representatives and his, her, their or any of their successors in right, title and interest&quot;
+  },
+  {
+    &quot;text&quot; : &quot;herien&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;herein&quot;
+  },
+  {
+    &quot;text&quot; : &quot;jamt&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Proof of Amount Due&quot;
+  },
+  {
+    &quot;text&quot; : &quot;kca&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Acknowledgement of Service &quot;
+  },
+  {
+    &quot;text&quot; : &quot;ld&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Notice to Cure fails to set forth the lender's address.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;lma &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Loan Modification Agreement&quot;
+  },
+  {
+    &quot;text&quot; : &quot;lma &quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Loan Modification Agreement&quot;
+  },
+  {
+    &quot;text&quot; : &quot;lte&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;LAST ENTRY&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Maarch&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;March&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Abstract1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Common1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;Corp1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Foreclosure&quot;,
+    &quot;replaceWith&quot; : &quot;Fore1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Judgment&quot;,
+    &quot;replaceWith&quot; : &quot;Jdg1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Miscellaneous&quot;,
+    &quot;replaceWith&quot; : &quot;Misc1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mag&quot;,
+    &quot;department&quot; : &quot;Property Searches&quot;,
+    &quot;replaceWith&quot; : &quot;Prop1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mdi&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We question whether any new monies were advanced under the mortgage modification agreement.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mdiu&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We question whether any new monies were advanced under the mortgage modification agreement.  Further, we fail to find any recording information of the mortgage modification agreement set forth herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;med&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Service of Notice of Mediation Availability&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ml&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Non-Military Service&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mntc&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification as to Proof of Mailing of Notice of Sale &quot;
+  },
+  {
+    &quot;text&quot; : &quot;mp&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;(Mediation papers are annexed thereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mpnc&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Mediation Program Notification Certification &quot;
+  },
+  {
+    &quot;text&quot; : &quot;myfurther&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Further, the property described in the complaint cannot be divided and should be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;myheirs&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;heirs, devisees, personal representatives, and his, her, their or any of their successors in right, title and interest&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mynom&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Notice of Motion for Entry of Final Judgment directed to&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mynts&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;\&quot;Service of the within Notice and Complaint (or amended) is hereby Acknowledged for the State of New Jersey on this 24th day of Feb, 2014.  John J. Hoffman, Acting Attorney General, by Ellen Seitz.\&quot;&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mysection&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing of Notice pursuant to Section (6) of the Fair Foreclosure Act&quot;
+  },
+  {
+    &quot;text&quot; : &quot;mytenants&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Proof of Mailing of Tenants' Rights pursuant to R.4:64-1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;n1&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether a notice of sale should have been annexed to the proof of mailing of notice of sale or filed separately in the proceedings.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;n2&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find any proof filed in the action of mailing a Notice of Sale as required by Rule 4:65-2.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ncl&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Notice to Cure fails to set forth the lenders address.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ND&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;AMOUNT OF DELINQUENT TAXES NOT DETERMINED, NO RETURN FILED&quot;
+  },
+  {
+    &quot;text&quot; : &quot;NDD&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;DIVISION RECORDS DO NOT REFLECT SUCH NAME. PLEASE CHECK THE NAME IN THE TITLE FOR PROPER SPELLING AND ALSO TO ASCERTAIN WHETHER THE OWNER LISTED IS IN FACT A CORPORATION OR SUBJECT TO THE CORPORATION BUSINESS TAX ACT&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ndis&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Notice of Dismissal as to &quot;
+  },
+  {
+    &quot;text&quot; : &quot;NDJ&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;AMOUNT OF DELINQUENT TAXES NOT DETERMINED, RETURN FILED, ADDITIONAL DATA REQUIRED&quot;
+  },
+  {
+    &quot;text&quot; : &quot;NDS&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;AMOUNT OF DELINQUENT TAXES NOT DETERMINED, NO RETURNS FILED &quot;
+  },
+  {
+    &quot;text&quot; : &quot;NJHMFA&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;New Jersey Housing and Mortgage Finance Agency&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nm&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that copies of the note and mortgage were attached to the Complaint in violation of Rule 1:4-3.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;NMS&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Non-Military Service&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nnm&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Complaint fails to set forth that no new monies were advanced with the mortgage as modified.  Further, we fail to find any recording information of the Modification Agreement filed herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nom&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Notice of Motion for &quot;
+  },
+  {
+    &quot;text&quot; : &quot;non&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Non-Military Service or Inability to Ascertain Military Status&quot;
+  },
+  {
+    &quot;text&quot; : &quot;NOS&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether a Notice of Sale should have been annexed to the above Certification or hereinafter filed separately.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nq&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the adequacy of the Inquiry.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nr&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;(Notice to Residential Tenants of Rights, Etc., annexed thereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nres&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of No Statement Received, Etc.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nrt&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;(Notice to Residential Tenants of Rights, Etc., annexed thereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nrtd&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(Not as yet returned into Court.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ns&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find any proof filed in the action of mailing a Notice of Sale as required by Rule 4:65-2.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nsa&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Further, we fail to find any statement that  is alive, even though  current whereabouts cannot be ascertained.  is not joined with the statement their heirs, devisees, etc.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;nso&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find any service of the above Order as directed therein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ntc&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to whether a Notice of Sale should have been annexed to the Certification as to Proof of Mailing of Notice of Sale or filed separately in the proceedings.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ntr&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Notice of Tenants' Rights&quot;
+  },
+  {
+    &quot;text&quot; : &quot;NTS&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Notice to the State of New Jersey&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ny&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(Not as yet returned into Court.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;OAF&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Order Directing Sheriff to Pay Additional Funds&quot;
+  },
+  {
+    &quot;text&quot; : &quot;oas&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Order for Additional Amount Due Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;OCND&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Order Correcting Name of Defendant&quot;
+  },
+  {
+    &quot;text&quot; : &quot;OSP&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Order Substituting Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;OST&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Order Setting Amount, Time and Place of Redemption&quot;
+  },
+  {
+    &quot;text&quot; : &quot;PAD&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Proof of Amount Due and Schedule&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pf&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pf&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff &quot;
+  },
+  {
+    &quot;text&quot; : &quot;PI&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;PENALTY AND INTEREST&quot;
+  },
+  {
+    &quot;text&quot; : &quot;plainitff&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Plaintif&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;plaintifff&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;plaitniff&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Planitff&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;plantiff&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pnf&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the pleadings set forth herein as \&quot;Received\&quot; are not \&quot;Filed\&quot; pleadings.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pom&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Proof of Mailing &quot;
+  },
+  {
+    &quot;text&quot; : &quot;pomt&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Proof of Mailing of Tenants Rights&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pst&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Premises to be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pur&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Mailing of Notice Pursuant to Section (6) of the Fair Foreclosure Act&quot;
+  },
+  {
+    &quot;text&quot; : &quot;pv&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;public venue&quot;
+  },
+  {
+    &quot;text&quot; : &quot;q1q&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;q&quot;
+  },
+  {
+    &quot;text&quot; : &quot;q2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;q3&quot;
+  },
+  {
+    &quot;text&quot; : &quot;q2&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;q3&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq2&quot;,
+    &quot;department&quot; : &quot;Miscellaneous&quot;,
+    &quot;replaceWith&quot; : &quot;dewf&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq2&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;wwww&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq3&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;ddwd&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq3&quot;,
+    &quot;department&quot; : &quot;Property Searches&quot;,
+    &quot;replaceWith&quot; : &quot;dewfewf&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq3&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;qq2&quot;
+  },
+  {
+    &quot;text&quot; : &quot;qq4&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;qq4&quot;
+  },
+  {
+    &quot;text&quot; : &quot;rc&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;Received &quot;
+  },
+  {
+    &quot;text&quot; : &quot;rcd&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find any recording information of the assignment of mortgage set forth herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;rcm&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;regular and certified mail&quot;
+  },
+  {
+    &quot;text&quot; : &quot;rdc&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that there are pleadings set forth herein as \&quot;Received\&quot; that are not \&quot;Filed\&quot; pleadings.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;recceived&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Received&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Receibed&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Received&quot;
+  },
+  {
+    &quot;text&quot; : &quot;REceive&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Receive&quot;
+  },
+  {
+    &quot;text&quot; : &quot;rf&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find any Affidavit of Proof of Reformation filed herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;rm&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;regular mail.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ros&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Report of Sale &quot;
+  },
+  {
+    &quot;text&quot; : &quot;RPP&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;Reinstatement procedures pending as of&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Rq&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Request to Enter Default and Certification as to &quot;
+  },
+  {
+    &quot;text&quot; : &quot;rrr,&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;return receipt requested,&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sc &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;See copy annexed hereto.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sca&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;See copy annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;scs&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(See copy of Services annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sf&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Certification of Search Fees&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sfh&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;set forth herein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sft&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;set forth therein.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sgtr&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Premises to be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;single &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Premises to be sold as a single tract&quot;
+  },
+  {
+    &quot;text&quot; : &quot;single&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Premises to be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sj &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Summary Judgment&quot;
+  },
+  {
+    &quot;text&quot; : &quot;soa&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Substitution of Attorney&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sp &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Substituting Plaintiff&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ss&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Sheriff's statement/Report of Sale is not sworn and subscribed to.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sss&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Sheriff's statement/Report of Sale is not signed by the Sheriff, nor is it sworn and subscribed to.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;st &quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Premises to be sold as a single tract.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;str&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that pleadings set forth herein with an \&quot;*\&quot; before their names are not filed by the Clerk of Superior Court.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sv&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(See copy of Service annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;svs&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;(See copy of Services annexed hereto.)&quot;
+  },
+  {
+    &quot;text&quot; : &quot;sws&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that the Sheriff's statement/Report of Sale is not sworn and subscribed to.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;test&quot;,
+    &quot;department&quot; : &quot;Miscellaneous&quot;,
+    &quot;replaceWith&quot; : &quot;test&quot;
+  },
+  {
+    &quot;text&quot; : &quot;testTest&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;TestTest1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;tets&quot;,
+    &quot;department&quot; : &quot;Common&quot;
+  },
+  {
+    &quot;text&quot; : &quot;therto&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;thereto&quot;
+  },
+  {
+    &quot;text&quot; : &quot;therto&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;thereto&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ti&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Consideration should be given as to the disposition of the Trustee's interest.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;tr &quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Tenants' Rights&quot;
+  },
+  {
+    &quot;text&quot; : &quot;ttt&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;ttt1&quot;
+  },
+  {
+    &quot;text&quot; : &quot;Turst&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Trust&quot;
+  },
+  {
+    &quot;text&quot; : &quot;tw&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;together with Certification of Proof of Amount Due and Certification of Due Diligence.&quot;
+  },
+  {
+    &quot;text&quot; : &quot;usa&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;United States of America&quot;
+  },
+  {
+    &quot;text&quot; : &quot;usa&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;United States of America&quot;
+  },
+  {
+    &quot;text&quot; : &quot;VAR&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;was declared inactive/revoked for failure to file annual reports on &quot;
+  },
+  {
+    &quot;text&quot; : &quot;VOIDAR&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;WAS DECLARED INACTIVE/REVOKED FOR FAILURE TO FILE ANNUAL REPORTS ON &quot;
+  },
+  {
+    &quot;text&quot; : &quot;VOIDTAX&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;WAS DECLARED INACTIVE/REVOKED FOR FAILURE TO FILE FRANCHISE TAXES ON &quot;
+  },
+  {
+    &quot;text&quot; : &quot;vp&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Vice President&quot;
+  },
+  {
+    &quot;text&quot; : &quot;VPLD&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Vice President Loan Documentation &quot;
+  },
+  {
+    &quot;text&quot; : &quot;vt&quot;,
+    &quot;department&quot; : &quot;Corporation&quot;,
+    &quot;replaceWith&quot; : &quot;was declared inactive/revoked for failure to file franchise taxes on &quot;
+  },
+  {
+    &quot;text&quot; : &quot;vy&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;by&quot;
+  },
+  {
+    &quot;text&quot; : &quot;wc&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that&quot;
+  },
+  {
+    &quot;text&quot; : &quot;wcya&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;We call your attention to the fact that&quot;
+  },
+  {
+    &quot;text&quot; : &quot;WFS&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Weichert Financial Services&quot;
+  },
+  {
+    &quot;text&quot; : &quot;wft&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find&quot;
+  },
+  {
+    &quot;text&quot; : &quot;wftf&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;We fail to find&quot;
+  },
+  {
+    &quot;text&quot; : &quot;woe&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Writ of Execution &quot;
+  },
+  {
+    &quot;text&quot; : &quot;WofP&quot;,
+    &quot;department&quot; : &quot;Abstract&quot;,
+    &quot;replaceWith&quot; : &quot;Writ of Possession &quot;
+  },
+  {
+    &quot;text&quot; : &quot;wop&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Writ of Possession &quot;
+  },
+  {
+    &quot;text&quot; : &quot;zga&quot;,
+    &quot;department&quot; : &quot;Common&quot;,
+    &quot;replaceWith&quot; : &quot;Zucker, Goldberg &amp; Ackerman, LLC&quot;
+  }
+]" id="autocorrectStore"></div><!-- div class="fadeMe"></div --><div class="overlayedZone loading" style="min-width:835px" id="container"><div id="alerts"></div><div class="clearfix" id="header"><div id="logo" class="clearfix"><a href="/backoffice/"><img border="0" alt="State Capital Title &amp; Abstract Co." src="/backoffice/assets/452e437e0b0ac748/ctx/images/statecapital-logo.png"></a></div><span id="logout">
+Welcome, CE!&nbsp;&nbsp;&nbsp;<a href="/backoffice/corporation/maintenance.pagewrapper.header.logout">[logout]</a></span></div><div id="nav"><ul><li><span>Corporation</span><ul class="subnav null"><li><a href="/backoffice/corporation/maintenance/true?t:lb=t">Corporate Maintenance</a></li><li><a href="/backoffice/corporation/corporateinfoeditor/new">Add New Corporate Information</a></li></ul></li></ul><ul><li><span>Abstracts</span><ul class="subnav abstracts_menu"><li><a href="/backoffice/abstracts/onorder">Files On Order</a></li><li><a href="/backoffice/abstracts/uploaded">Un-Printed Files</a></li><li><a href="/backoffice/abstracts/archived">Archived Abstracts</a></li><li><a href="/backoffice/abstracts/abstractduplicatemaintenance">Abstract Duplicate Maintenance</a></li><li><a href="/backoffice/abstracts/certificateofregularitycreation">Certificate of Regularity Creation</a></li></ul></li></ul><ul><li><span>Judgment</span><ul class="subnav judgment_menu"><li><a href="/backoffice/judgment/newjudgmentrequest">New Requests</a></li><li><a href="/backoffice/judgment/reports">Judgment Reports</a></li><li><a href="/backoffice/judgment/viewcancelednjjudgments">View Canceled NJ Judgments</a></li><li><a href="/backoffice/judgment/updatepropertysearch">Update Property Search</a></li><li><a href="/backoffice/judgment/reportdetails">Report Details</a></li><li><a href="/backoffice/judgment/orderdelete">Order Cancel</a></li><li><a href="/backoffice/judgment/reportmaintenance">Judgment Report Maintenance</a></li></ul></li></ul><ul><li><span>Customer Requests</span><ul class="subnav null"><li><a href="/backoffice/customerrequests/newrequest">New Requests</a></li><li><a href="/backoffice/customerrequests/abstractrequest">Find Chancery Request</a></li><li><a href="/backoffice/customerrequests/pendingorderschancery">Pending Orders Chancery</a></li><li><a href="/backoffice/customerrequests/chancerystatistics">Chancery Orders Statistics</a></li><li><a href="/backoffice/customerrequests/confirmchanceryabstract?autoRefresh=false">Confirm Chancery Abstract</a></li><li><a href="/backoffice/customerrequests/chancerycompletedorders">Chancery Completed Orders</a></li><li><a href="/backoffice/customerrequests/propertysearchreports">Property Search Reports</a></li><li><a href="/backoffice/customerrequests/processrequest">Process Request</a></li><li><a href="/backoffice/customerrequests/confirmrequest?autoRefresh=false">Confirm Request</a></li><li><a href="/backoffice/customerrequests/pendingorders">Pending Orders</a></li><li><a href="/backoffice/customerrequests/completedorders">Completed Orders</a></li></ul></li></ul><ul><li><span>Administrator</span><ul class="subnav administrator_menu"><li><a href="/backoffice/administrator/customermergeeditor">Customer Merge Editor</a></li><li><a href="/backoffice/administrator/scansstatus">Scans Status</a></li><li><a href="/backoffice/administrator/postcorporate">Post Corporate &amp; out of state Judgment Transactions to Traverse</a></li><li><a href="/backoffice/administrator/postchancery">Post Chancery Transaction to Traverse</a></li><li><a href="/backoffice/administrator/postnjjudgment">Post NJ Judgment Transaction to Traverse</a></li><li><a href="/backoffice/administrator/customerinformation">Customer Information</a></li><li><a href="/backoffice/administrator/webpendingorders">Web Pending Orders</a></li><li><a href="/backoffice/administrator/printers">Printers</a></li><li><a href="/backoffice/administrator/errorreports">Error Reports</a></li><li><a href="/backoffice/administrator/processmanagement">Process Management</a></li><li><a href="/backoffice/administrator/judgmentreportgeneratorstatus">Judgment Report Generator Status</a></li><li><a href="/backoffice/administrator/ecourtscredentials">Ecourts Credentials</a></li><li><a href="/backoffice/administrator/vendorsfailedreports">Vendors Failed Reports</a></li><li><a href="/backoffice/administrator/billingmaintenance">Billing Maintenance</a></li><li><a href="/backoffice/administrator/qualiacustomerstable">Qualia Customers</a></li><li><a href="/backoffice/administrator/corporatecreatereportprintsetting">Corporation Create Report Print Setting</a></li><li><a href="/backoffice/administrator/foreclosurechargepackform">Foreclosure Pack Form</a></li></ul></li></ul><ul><li><span>System Setup</span><ul class="subnav system_setup_menu"><li><a href="/backoffice/systemsetup/servicetypes">Service Types</a></li><li><a href="/backoffice/systemsetup/reporttypes">Report Types</a></li><li><a href="/backoffice/systemsetup/statutes">Statute</a></li><li><a href="/backoffice/systemsetup/autocorrect">Auto Correct</a></li><li><span>Pricing<div style="float: right;">&gt;</div></span><ul class="childsubnav"><li><a href="/backoffice/systemsetup/pricing/group"> Group</a></li><li><a href="/backoffice/systemsetup/pricing/item">Item</a></li><li><a href="/backoffice/systemsetup/pricing/price">Price</a></li></ul></li><li><a href="/backoffice/systemsetup/complainttypes">Complaint Type</a></li></ul></li></ul><ul><li><span>Sales</span><ul class="subnav null"><li><a href="/backoffice/sales/dailyreports">Daily Reports</a></li><li><a href="/backoffice/sales/topcustomers">Top 100 Customers</a></li><li><a href="/backoffice/sales/reports">Sales Reports</a></li><li><a href="/backoffice/sales/customerstatistics">Customer Statistics</a></li><li><a href="/backoffice/sales/nosalesin5days">No Sales In 5 Days</a></li></ul></li></ul><ul><li><span>ECourts</span><ul class="subnav null"><li><a href="/backoffice/ecourts/docketfilescomposer">Docket Files Composer</a></li><li><a href="/backoffice/ecourts/judgment">Judgment Ecourts</a></li></ul></li></ul></div><div id="main"><h1>Corporate Maintenance</h1><div id="maintenanceListBlock"><div class="corporationDialogBlock invisibleBlock" id="corporationEditBlock"><div class="emptyBackground t-zone" id="corporationEditZone"><!-- zone may be invisible (visible: false)? --><div class="viewDialog"><h3><span>You Are Creating a Cardfile</span><a id="cancelCorporationEditBlock" class="icon-close preventDoubleClick" href="/backoffice/corporation/maintenance.corporationlist.cancelcorporationeditblock"></a><img border="0" src="/backoffice/images/loading_circles.gif" style="float: right;"></h3></div></div></div><div class="findBlock"><div class="t-zone" id="cardFilesZonefindZone"><form class="findForm editorForm t-prevent-submission" onsubmit="javascript:return Tapestry.waitForPage(event);" action="/backoffice/corporation/maintenance.corporationlist.find.findform" method="post" id="findForm" novalidate="novalidate"><div class="" style="display: none;"><input value="/sSi4lmFdtEviMfQpmW4UdkjRmI=:H4sIAAAAAAAAAKWSsUpDMRSGjxeqQjfBwV3XdLBXpS62giBUES665+aettHcJCanrV2cfAkXn0Cc9Ak6uPkOPoCLg5ODNy1FQRBuXUL4yPnPT/7//g0qwxg2hXHWOE7S6NoRl5pQcy2w8YMr6Yl1pM6YMuYiHXkHsXFdxi0XPWTELXpyo5gVM6hkylLukTXTAnJBBxJVtp4g9e3G6bj6uvr8GcFCG6rCaHJGHfMcCVba53zAa4rrbi0hJ3V398oSLIaNrdH8RptljZ44I9D7pJ/m0vtCdPyQ1Tsfdy8RwJUdbkNcyohwktBJ7i/hGoBgeQbmVgpClWEDdkpNe+RO9AZc9XFmpTplZ4H9R29qaAvqpQTCkZIuItr7MyJhcms0avJskgn9Tug2eV97erzZjyBqFx+sZPH6MAu2Qs1QYV6AULMJCrVaCttbpL9vX43GVHcPAwAA" name="t:formdata" type="hidden"><input type="hidden" name="t:submit" value="[&quot;findBtn&quot;,&quot;findBtn&quot;]"></div><a id="validateSearchValue" href="/backoffice/corporation/maintenance.corporationlist.find.validatesearchvalue"></a><div class="right-in va_top"><select class="styled-select lookBy" id="lookBy" name="lookBy" aria-invalid="false"><option selected="selected" value="Corporation Name">Corporation Name</option><option value="Corporation Number">Corporation Number</option></select><img id="lookBy_icon" class="t-error-icon" alt="" src="/backoffice/assets/452e437e0b0ac748/core/spacer.gif" style="display: none;"></div><div class="right-in va_top"><select class="styled-select" id="criteria" name="criteria"><option value="Whole Field">Whole Field</option><option value="Start of Field">Start of Field</option><option selected="selected" value="Any Part of Field">Any Part of Field</option></select><img id="criteria_icon" class="t-error-icon" alt="" src="/backoffice/assets/452e437e0b0ac748/core/spacer.gif" style="display: none;"></div><div class="right-in w_183"><input class="in searchValueField" id="searchValue" name="searchValue" type="text" aria-required="true" aria-invalid="false"><img id="searchValue_icon" class="t-error-icon" alt="" src="/backoffice/assets/452e437e0b0ac748/core/spacer.gif" style="display: none;"></div><div class="right-in va_top"><input class="button preventDoubleClick" value="Find" id="findBtn" name="findBtn" type="submit"><img border="0" src="/backoffice/images/loading_circles.gif" style="float: right;"></div></form></div></div><div class="t-zone" id="cardFilesZone"><a onclick="javascript:return Tapestry.waitForPage(event);" id="newCorporation" title="New" class="newCorpButton button editCorporation" href="/backoffice/corporation/maintenance.corporationlist.newcorporation">New corporation</a><table class="modal-data-table"></table></div></div></div><div id="footer"><p class="f-left"></p><p class="f-right">
+(v. 2.9-SNAPSHOT) © 2013-
+<script type="text/javascript">
+document.write(new Date().getFullYear());
+</script>2021
+State Capital
+</p></div><div class="zone-ajax-overlay" style="width: 1333px; height: 872px; left: 0px; top: 0px;"></div></div><script type="text/javascript">Tapestry.DEBUG_ENABLED = true;
+Tapestry.DEBUG_ENABLED = true;
+Tapestry.onDOMLoaded(function() {
+Tapestry.init({
+  "formEventManager" : [
+    {
+      "formId" : "findForm",
+      "validate" : {
+        "submit" : true,
+        "blur" : true
+      }
+    }
+  ],
+  "alertManager" : [
+    {
+      "dismissURL" : "/backoffice/corporation/maintenance.pagewrapper.alerts:dismiss",
+      "id" : "alerts",
+      "dismissText" : "Dismiss all"
+    }
+  ]
+});
+Tapestry.init({
+  "zone" : [
+    {
+      "show" : "show",
+      "update" : "highlight",
+      "element" : "corporationEditZone"
+    },
+    {
+      "show" : "show",
+      "update" : "highlight",
+      "element" : "cardFilesZonefindZone"
+    },
+    {
+      "show" : "show",
+      "update" : "highlight",
+      "element" : "cardFilesZone"
+    }
+  ],
+  "linkZone" : [
+    {
+      "linkId" : "findForm",
+      "zoneId" : "cardFilesZonefindZone",
+      "url" : "/backoffice/corporation/maintenance.corporationlist.find.findform"
+    },
+    {
+      "linkId" : "newCorporation",
+      "zoneId" : "corporationEditZone",
+      "url" : "/backoffice/corporation/maintenance.corporationlist.newcorporation"
+    }
+  ],
+  "activate" : [
+    "searchValue"
+  ],
+  "validate" : [
+    {
+      "criteria" : [
+        [
+          "required",
+          "You must provide a value for Criteria."
+        ]
+      ],
+      "lookBy" : [
+        [
+          "required",
+          "You must provide a value for Look By."
+        ]
+      ]
+    }
+  ]
+});
+});
+</script></body></html>
