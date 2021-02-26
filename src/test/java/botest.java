@@ -59,6 +59,7 @@ public void mainPageTest() {
     $(By.name("corpinfo")).setValue("Selenide Test Corp info");
     Util.getRandomOption($(Selectors.byAttribute("name*", "statute")));
     $(Selectors.byAttribute("id*", "updateLastStatusReport")).click();
+    $(By.id("lastStatusReport1")).shouldHave(text(Util.getCurrentDateShortened()));
     $(By.name("corpstat")).setValue("Corp Status Selenide Test");
     $(By.name("agent")).setValue("Agent Selenide Test");
     $(By.name("agentAddress")).setValue("Agent address Selenide Test");
@@ -69,6 +70,7 @@ public void mainPageTest() {
     $(By.name("orddate")).setValue(Util.getCurrentDate());
     $(By.name("ordcust")).setValue("ord customer Selenide Test");
     $(Selectors.byAttribute("id*", "updateLastTaxReport")).click();
+    $(By.id("lastTaxReport1")).shouldHave(text(Util.getCurrentDateShortened()));
     $(By.name("taxInformation")).setValue("Tax Info Selenide Test");
     $(By.name("miscnotes")).setValue("testNote for Selenide Test");
     $(By.name("save")).click();

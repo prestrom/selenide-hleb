@@ -44,4 +44,9 @@ public final class Util {
         DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
         return dateFormat.format(date);
     }
+    public static String getCurrentDateShortened() {
+        Date date = new Date();
+        DateFormat dateFormat = new SimpleDateFormat("MM/dd/YY");
+        return dateFormat.format(date);
+    }
 }
